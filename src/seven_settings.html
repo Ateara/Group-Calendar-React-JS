@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PokerMind</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Bootsrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Select2 -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css"
+    rel="stylesheet" />
+    <!-- Custom styles for this template-->
+    <link href="CSS/Admin.css" rel="stylesheet">
+
+
+</head>
+
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="sidebar sidebar-light">
+            <ul class="p-2">
+
+                <!-- Sidebar - Brand -->
+                <h2 class="sidebar-brand d-flex text-center px-2" style="color: #fff;" href="#">
+                    <!-- <span class="text-sidebar align-self-center">Ismart</span> -->
+                    <h7><img src="Asset/poker-removebg-preview.png" style="height: 50px; width: 50px" /><span
+                            class="text-sidebar px-2 mt-4">Xcounter</span></h7>
+
+                </h2>
+                <hr class="text-white" />
+                <h6 class="text-white ps-1">Union Head:</h6>
+                <p class="text-white ps-1">cs</p>
+                <hr class="text-white" />
+                <li class="nav-item">
+                    <a class="nav-link text-list" href="dashboard.html">
+                        <i class="bi bi-speedometer iconi"></i>
+                        <span class="text-sidebar">Dashboard</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-list" href="excel_upload.html">
+                        <i class="bi bi-file-earmark-excel iconi"></i>
+                        <span class="text-sidebar">Excel Upload</span></a>
+                </li>
+                <li>
+                    <div class="nav-item dropdown">
+                        <button class="btn nav-link text-list d-flex justify-content-between" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample"
+                            style="border: none;">
+                            <div><i class="bi bi bi-people-fill iconi me-1"></i><span class="text-sidebar iconi">Users Management</span></div>
+                            <div><i class="bi bi-chevron-down iconi"></i></div>
+                        </button>
+                        <ul class="collapse droping px-0" id="collapseExample">
+                            <li class="nav-item p-1 ps-0">
+                                <a class="nav-link text-list" href="user_management_add_User.html">
+                                    <i class="bi bi-circle iconi"></i>
+                                    <span class="text-sidebar">Add User</span></a>
+                            </li>
+                            <li class="nav-item p-1 ps-0">
+                                <a class="nav-link text-list" href="user_management_users.html">
+                                    <i class="bi bi-circle iconi"></i>
+                                    <span class="text-sidebar">Users</span></a>
+                            </li>
+                            <li class="nav-item p-1 ps-0">
+                                <a class="nav-link text-list" href="user_management_account.html">
+                                    <i class="bi bi-circle iconi"></i>
+                                    <span class="text-sidebar">Accounts</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-item">
+                        <button class="btn nav-link text-list d-flex justify-content-between" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample6" aria-expanded="true" aria-controls="collapseExample"
+                            style="border: none;">
+                            <div><i class="bi bi-gear-fill iconi me-1"></i><span class="text-sidebar iconi">Settings</span></div>
+                            <div><i class="bi bi-chevron-down iconi"></i></div>
+                        </button>
+                        <ul class="collapse droping px-0" id="collapseExample6">
+                            <li class="nav-item p-1 ps-0">
+                                <a class="nav-link text-list" href="settings_header-renamer.html">
+                                    <i class="bi bi-circle iconi"></i>
+                                    <span class="text-sidebar">Header Renamer</span></a>
+                            </li>
+                            <li class="nav-item p-1 ps-0">
+                                <a class="nav-link text-list" href="settings_main-formula.html">
+                                    <i class="bi bi-circle iconi"></i>
+                                    <span class="text-sidebar">Data</span></a>
+                            </li>
+                            <li class="nav-item p-1 ps-0">
+                                <a class="nav-link text-list" href="settings_series-formula.html">
+                                    <i class="bi bi-circle iconi"></i>
+                                    <span class="text-sidebar">Constan</span></a>
+                            </li>
+                            <li class="nav-item p-1 ps-0">
+                                <a class="nav-link text-list" href="settings_series-variable.html">
+                                    <i class="bi bi-circle iconi"></i>
+                                    <span class="text-sidebar">Function</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="nav-item">
+                        <button class="btn nav-link text-list d-flex justify-content-between" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample1" aria-expanded="true" aria-controls="collapseExample"
+                            style="border: none;">
+                            <div><i class="bi bi-app iconi"></i>
+                            <span class="text-sidebar iconi">SEVEN</span></div>
+                            <div><i class="bi bi-chevron-down iconi"></i></div>
+                        </button>
+                        <ul class="collapse droping px-0" id="collapseExample1">
+                            <li class="nav-item p-1 ps-0">
+                                <a class="nav-link text-list" href="seven_settings.html">
+                                    <i class="bi bi-circle iconi"></i>
+                                    <span class="text-sidebar">Settings</span></a>
+                            </li>
+                            <li class="nav-item p-1 ps-0">
+                                <a class="nav-link text-list" href="seven_upline-downline.html">
+                                    <i class="bi bi-circle iconi"></i>
+                                    <span class="text-sidebar">Upline/Downline</span></a>
+                            </li>
+                            <li class="nav-item p-1 ps-0">
+                                <a class="nav-link text-list" href="seven_report-data.html">
+                                    <i class="bi bi-circle iconi"></i>
+                                    <span class="text-sidebar">Report Data</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-item">
+                        <button class="btn nav-link text-list d-flex justify-content-between" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample7" aria-expanded="true" aria-controls="collapseExample"
+                            style="border: none;">
+                            <div><i class="bi bi-app iconi"></i>
+                            <span class="text-sidebar iconi">VARIANCE RIDER</span></div>
+                            <div><i class="bi bi-chevron-down iconi"></i></div>
+                        </button>
+                        <ul class="collapse droping px-0" id="collapseExample7">
+                            <li class="nav-item p-1 ps-0">
+                                <a class="nav-link text-list" href="seven_settings.html">
+                                    <i class="bi bi-circle iconi"></i>
+                                    <span class="text-sidebar">Settings</span></a>
+                            </li>
+                            <li class="nav-item p-1 ps-0">
+                                <a class="nav-link text-list" href="seven_upline-downline.html">
+                                    <i class="bi bi-circle iconi"></i>
+                                    <span class="text-sidebar">Upline/Downline</span></a>
+                            </li>
+                            <li class="nav-item p-1 ps-0">
+                                <a class="nav-link text-list" href="seven_report-data.html">
+                                    <i class="bi bi-circle iconi"></i>
+                                    <span class="text-sidebar">Report Data</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-item">
+                        <button class="btn nav-link text-list d-flex justify-content-between" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample8" aria-expanded="true" aria-controls="collapseExample"
+                            style="border: none;">
+                            <div><i class="bi bi-app iconi"></i>
+                            <span class="text-sidebar iconi">BABY SHARK</span></div>
+                            <div><i class="bi bi-chevron-down iconi"></i></div>
+                        </button>
+                        <ul class="collapse droping px-0" id="collapseExample8">
+                            <li class="nav-item p-1 ps-0">
+                                <a class="nav-link text-list" href="seven_settings.html">
+                                    <i class="bi bi-circle iconi"></i>
+                                    <span class="text-sidebar">Settings</span></a>
+                            </li>
+                            <li class="nav-item p-1 ps-0">
+                                <a class="nav-link text-list" href="seven_upline-downline.html">
+                                    <i class="bi bi-circle iconi"></i>
+                                    <span class="text-sidebar">Upline/Downline</span></a>
+                            </li>
+                            <li class="nav-item p-1 ps-0">
+                                <a class="nav-link text-list" href="seven_report-data.html">
+                                    <i class="bi bi-circle iconi"></i>
+                                    <span class="text-sidebar">Report Data</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-item">
+                        <button class="btn nav-link text-list d-flex justify-content-between" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample9" aria-expanded="true" aria-controls="collapseExample"
+                            style="border: none;">
+                            <div><i class="bi bi-app iconi"></i>
+                            <span class="text-sidebar iconi">MPC</span></div>
+                            <div><i class="bi bi-chevron-down iconi"></i></div>
+                        </button>
+                        <ul class="collapse droping px-0" id="collapseExample9">
+                            <li class="nav-item p-1 ps-0">
+                                <a class="nav-link text-list" href="seven_settings.html">
+                                    <i class="bi bi-circle iconi"></i>
+                                    <span class="text-sidebar">Settings</span></a>
+                            </li>
+                            <li class="nav-item p-1 ps-0">
+                                <a class="nav-link text-list" href="seven_upline-downline.html">
+                                    <i class="bi bi-circle iconi"></i>
+                                    <span class="text-sidebar">Upline/Downline</span></a>
+                            </li>
+                            <li class="nav-item p-1 ps-0">
+                                <a class="nav-link text-list" href="seven_report-data.html">
+                                    <i class="bi bi-circle iconi"></i>
+                                    <span class="text-sidebar">Report Data</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-item">
+                        <button class="btn nav-link text-list d-flex justify-content-between" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample10" aria-expanded="true" aria-controls="collapseExample"
+                            style="border: none;">
+                            <div><i class="bi bi-app iconi"></i>
+                            <span class="text-sidebar iconi">pokermy</span></div>
+                            <div><i class="bi bi-chevron-down iconi"></i></div>
+                        </button>
+                        <ul class="collapse droping px-0" id="collapseExample10">
+                            <li class="nav-item p-1 ps-0">
+                                <a class="nav-link text-list" href="seven_settings.html">
+                                    <i class="bi bi-circle iconi"></i>
+                                    <span class="text-sidebar">Settings</span></a>
+                            </li>
+                            <li class="nav-item p-1 ps-0">
+                                <a class="nav-link text-list" href="seven_upline-downline.html">
+                                    <i class="bi bi-circle iconi"></i>
+                                    <span class="text-sidebar">Upline/Downline</span></a>
+                            </li>
+                            <li class="nav-item p-1 ps-0">
+                                <a class="nav-link text-list" href="seven_report-data.html">
+                                    <i class="bi bi-circle iconi"></i>
+                                    <span class="text-sidebar">Report Data</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <!-- Navbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white">
+                    <!-- Container wrapper -->
+                    <div class="container-fluid">
+
+                        <!-- Collapsible wrapper -->
+                        <div class="navbar-collapse" id="navbarSupportedContent">
+                            <!-- Navbar brand -->
+                            <button id="sidebarToggleTop" class="btn" style="font-size: 30px;">
+                                <i class="bi bi-list text-dark"></i>
+                            </button>
+                            <h7 class="px-3">Upload Excel</h7>
+                            <h7 class="px-3">User Management</h7>
+                        </div>
+                        <!-- Collapsible wrapper -->
+                        <!-- Right elements -->
+                        <div class="d-flex align-items-center">
+
+                            <!-- Avatar -->
+                            <button class="btn" style="font-size: 30px;"><a href="form_login.html"><i
+                                        class="bi bi-box-arrow-right text-dark"></a></i></button>
+                        </div>
+                        <!-- Right elements -->
+                    </div>
+                    <!-- Container wrapper -->
+                </nav>
+                <!-- Navbar -->
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid p-4">
+                    <!-- Breadcumb -->
+                    
+
+                    <!-- Content Row -->
+                    <div class="card mb-3">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed border" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="true" aria-controls="flush-collapseOne">
+                                        SEVEN
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="card-body p-2">
+
+                                            <table class="table border table-striped mb-1 mt-1" style="border-radius: 2px 2px;">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" class="border py-3">File Name</th>
+
+                                                        <th scope="col" class="border py-3">Date</th>
+                                                        <th scope="col" class="border py-3">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="border py-3">29_04_2023_11_25_2iUAeu.xlsx</td>
+
+                                                        <td class="border py-3">20-04-2023 11.25</td>
+                                                        <td class="border py-2">
+                                                            <button class="btn bg-primary"> <i
+                                                                    class="bi bi-gear-fill text-white bg-primary"></i><span
+                                                                    class="text-white px-1">Configure</span></button>
+                                                            <a class="btn bg-warning"
+                                                                href="seven_settings_calculate.html"> <i
+                                                                    class="bi bi-table text-dark"></i><span
+                                                                    class="text-dark px-1">Calculate</span></a>
+                                                            <button class="btn bg-danger"><i
+                                                                    class="bi bi-trash text-white"></i><span
+                                                                    class="text-white px-1">Remove</span></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="border py-3">29_04_2023_11_25_2iUAeu.xlsx</td>
+
+                                                        <td class="border py-3">20-04-2023 11.25</td>
+                                                        <td class="border py-2">
+                                                            <button class="btn bg-primary"> <i
+                                                                    class="bi bi-gear-fill text-white bg-primary"></i><span
+                                                                    class="text-white px-1">Configure</span></button>
+                                                            <a class="btn bg-warning"
+                                                                href="seven_settings_calculate.html"> <i
+                                                                    class="bi bi-table text-dark"></i><span
+                                                                    class="text-dark px-1">Calculate</span></a>
+                                                            <button class="btn bg-danger"><i
+                                                                    class="bi bi-trash text-white"></i><span
+                                                                    class="text-white px-1">Remove</span></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="border py-3">29_04_2023_11_25_2iUAeu.xlsx</td>
+
+                                                        <td class="border py-3">20-04-2023 11.25</td>
+                                                        <td class="border py-2">
+                                                            <button class="btn bg-primary"> <i
+                                                                    class="bi bi-gear-fill text-white bg-primary"></i><span
+                                                                    class="text-white px-1">Configure</span></button>
+                                                            <a class="btn bg-warning"
+                                                                href="seven_settings_calculate.html"> <i
+                                                                    class="bi bi-table text-dark"></i><span
+                                                                    class="text-dark px-1">Calculate</span></a>
+                                                            <button class="btn bg-danger"><i
+                                                                    class="bi bi-trash text-white"></i><span
+                                                                    class="text-white px-1">Remove</span></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="border py-3">29_04_2023_11_25_2iUAeu.xlsx</td>
+
+                                                        <td class="border py-3">20-04-2023 11.25</td>
+                                                        <td class="border py-2">
+                                                            <button class="btn bg-primary"> <i
+                                                                    class="bi bi-gear-fill text-white bg-primary"></i><span
+                                                                    class="text-white px-1">Configure</span></button>
+                                                            <a class="btn bg-warning"
+                                                                href="seven_settings_calculate.html"> <i
+                                                                    class="bi bi-table text-dark"></i><span
+                                                                    class="text-dark px-1">Calculate</span></a>
+                                                            <button class="btn bg-danger"><i
+                                                                    class="bi bi-trash text-white"></i><span
+                                                                    class="text-white px-1">Remove</span></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="border py-3">29_04_2023_11_25_2iUAeu.xlsx</td>
+
+                                                        <td class="border py-3">20-04-2023 11.25</td>
+                                                        <td class="border py-2">
+                                                            <button class="btn bg-primary"> <i
+                                                                    class="bi bi-gear-fill text-white bg-primary"></i><span
+                                                                    class="text-white px-1">Configure</span></button>
+                                                            <a class="btn bg-warning"
+                                                                href="seven_settings_calculate.html"> <i
+                                                                    class="bi bi-table text-dark"></i><span
+                                                                    class="text-dark px-1">Calculate</span></a>
+                                                            <button class="btn bg-danger"><i
+                                                                    class="bi bi-trash text-white"></i><span
+                                                                    class="text-white px-1">Remove</span></button>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- /.container-fluid -->
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Preview Data of 13_05_2023_19_38_FtQ7dg.xlsx
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div style="overflow-x: auto;">
+                                        <table class="table border mt-3">
+                                            <thead class="bg-black border">
+                                                <tr class="text-white text-center">
+                                                    <div class="row">
+                                                        <th class="px-5">A</th>
+                                                        <th class="px-5">B</th>
+                                                        <th class="px-5">C</th>
+                                                        <th class="px-5">D</th>
+                                                        <th class="px-5">E</th>
+                                                        <th class="px-5">F</th>
+                                                        <th class="px-5">G</th>
+                                                        <th class="px-5">H</th>
+                                                        <th class="px-5">I</th>
+                                                        <th class="px-5">J</th>
+                                                        <th class="px-5">K</th>
+                                                        <th class="px-5">M</th>
+                                                        <th class="px-5">N</th>
+                                                        <th class="px-5">O</th>
+                                                        <th class="px-5">P</th>
+                                                        <th class="px-5">Q</th>
+                                                        <th class="px-5">R</th>
+                                                        <th class="px-5">S</th>
+                                                        <th class="px-5">T</th>
+                                                        <th class="px-5">U</th>
+                                                        <th class="px-5">V</th>
+                                                        <th class="px-5">W</th>
+                                                        <th class="px-5">X</th>
+                                                        <th class="px-5">Y</th>
+                                                        <th class="px-5">Z</th>
+                                                    </div>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                        <td class="px-5">youche</td>
+                                                        <td class="px-5">770492</td>
+                                                        <td class="px-5">youche</td>
+                                                        <td class="px-5"> A B C D E F G H I J K L M N O </td>
+                                                        <td class="px-5">2851602</td>
+                                                        <td class="px-5">lawrence</td>
+                                                        <td class="px-5">890831</td>
+                                                        <td class="px-5">Taiwan</td>
+                                                        <td class="px-5">0</td>
+                                                        <td class="px-5">0</td>
+                                                        <td class="px-5">0</td>
+                                                        <td class="px-5">0</td>
+                                                        <td class="px-5">0</td>
+                                                        <td class="px-5">0</td>
+                                                        <td class="px-5">0</td>
+                                                        <td class="px-5">0</td>
+                                                        <td class="px-5">0</td>
+                                                        <td class="px-5">0</td>
+                                                        <td class="px-5">0</td>
+                                                        <td class="px-5">0</td>
+                                                        <td class="px-5">0</td>
+                                                        <td class="px-5">0</td>
+                                                        <td class="px-5">0</td>
+                                                        <td class="px-5">0</td>
+                                                        <td class="px-5">0</td>
+                                                </tr>
+                                                
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="mb-3">
+                                        <label for="formGroupExampleInput" class="form-label fw-bold">Label</label>
+                                        <input type="text" class="form-control" id="formGroupExampleInput"
+                                            placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="mb-3">
+                                        <label for="formGroupExampleInput" class="form-label fw-bold">Column
+                                            Name</label>
+                                            <div class="py-1">
+                                                <select class="select form-select">
+                                                    <option>A</option>
+                                                    <option>B</option>
+                                                    <option>C</option>
+                                                    <option>D</option>
+                                                </select>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="formGroupExampleInput" class="form-label fw-bold">Agent ID Haven't
+                                            Have Upline</label>
+                                            <div class="py-1">
+                                                <select class="select form-select">
+                                                    <option>A</option>
+                                                    <option>B</option>
+                                                    <option>C</option>
+                                                    <option>D</option>
+                                                </select>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <button class="btn btn-primary">submit</button>
+                                    <button class="btn btn-secondary">Copy Label</button>
+                                </div>
+                                <div class="col-6">
+                                    <div><button class="btn btn-dark col-12">Check Column</button></div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <table class="table border mt-3 table-striped">
+                                    <thead class="border">
+                                        <tr>
+                                            <th scope="col" colspan="2" class="border">Label</th>
+                                            <th scope="col" class="border">Column</th>
+                                            <th scope="col" class="border">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="border">
+                                        <tr>
+                                            <td colspan="2">NICKNAME</td>
+                                            <td class="border">A</td>
+                                            <td><button class="btn bg-danger"><span
+                                                        class="text-white px-1">Remove</span></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">PLAYER_ID</td>
+                                            <td class="border">B</td>
+                                            <td><button class="btn bg-danger"><span
+                                                        class="text-white px-1">Remove</span></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">AGENT_ID</td>
+                                            <td class="border">E</td>
+                                            <td><button class="btn bg-danger"><span
+                                                        class="text-white px-1">Remove</span></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">REMARK</td>
+                                            <td class="border">C</td>
+                                            <td><button class="btn bg-danger"><span
+                                                        class="text-white px-1">Remove</span></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End of Content Wrapper -->
+
+            </div>
+
+            <!-- jquery -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+         <!-- Select2 -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+            <!-- JS Bootstrap 5 -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                crossorigin="anonymous">
+            </script>
+
+
+            <!-- Custom jS -->
+            <script src="JS/index.js"></script>
+
+</body>
+
+</html>
